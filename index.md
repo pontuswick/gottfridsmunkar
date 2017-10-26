@@ -1,37 +1,41 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <a href="handels.html">Tillbaka (Frontend)</a>
+   <h3>backend</h3>
+   
+   <h1>tack som fan</h1>
+   
+   
+   <h3>kundorder:</h3>
+    <p id="textrad"></p>
+    <br>
+    
+    <h3>Munkorder:</h3>
+      <p id="textradigen"></p>
 
-You can use the [editor on GitHub](https://github.com/pontuswick/gottfridsmunkar/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+   
+   <script>
+       /*
+ var kund = localStorage.getItem("myKund");
+        document.getElementById("text").innerHTML=kund;
+       */
+       /*
+       var munk=localStorage.getItem("myDonut");
+       document.getElementById("munk").innerHTML=munk;
+       */
+         var dataBack = JSON.parse(localStorage.getItem("cat"));
+document.getElementById("textrad").innerHTML=dataBack;
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+              var second = JSON.parse(localStorage.getItem("great"));
+document.getElementById("textradigen").innerHTML=second;
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/pontuswick/gottfridsmunkar/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+    </script>
+    
+</body>
+</html>
